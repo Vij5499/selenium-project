@@ -36,20 +36,24 @@ public class ProductsPage {
 
     // --- Core Action Methods ---
 
+// In your ProductsPage.java file...
+
     public void addProductToCart(String productName) {
         performSearchAndWait(productName);
-        By containerLocator = By.xpath(String.format(productContainerByName, productName));
-        WebElement productContainer = wait.until(ExpectedConditions.visibilityOfElementLocated(containerLocator));
+        By productLocator = By.xpath(String.format(productContainerByName, productName));
+        WebElement productContainer = wait.until(ExpectedConditions.visibilityOfElementLocated(productLocator));
         WebElement addToCartButton = productContainer.findElement(addToCartFromContainer);
+        // Use a JS click for maximum stability
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", addToCartButton);
     }
 
     public ProductDetailsPage viewProduct(String productName) {
         performSearchAndWait(productName);
-        By containerLocator = By.xpath(String.format(productContainerByName, productName));
-        WebElement productContainer = wait.until(ExpectedConditions.visibilityOfElementLocated(containerLocator));
+        By productLocator = By.xpath(String.format(productContainerByName, productName));
+        WebElement productContainer = wait.until(ExpectedConditions.visibilityOfElementLocated(productLocator));
         WebElement viewProductLink = productContainer.findElement(viewProductFromContainer);
-        viewProductLink.click();
+        // Use a JS click for maximum stability
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", viewProductLink);
         return new ProductDetailsPage(driver);
     }
     

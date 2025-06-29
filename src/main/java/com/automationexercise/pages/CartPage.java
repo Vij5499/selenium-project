@@ -1,6 +1,7 @@
 package com.automationexercise.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,21 +16,21 @@ public class CartPage {
 
     // --- Locators ---
     private final By cartItemsTable = By.id("cart_items");
-    private final By proceedToCheckoutButton = By.xpath("//a[contains(text(),'Proceed To Checkout')]");
-    private final String itemQuantityLocator = "//a[text()='%s']/ancestor::tr//button[@class='disabled']";
-    private final String removeItemButtonLocator = "//a[text()='%s']/ancestor::tr//a[@class='cart_quantity_delete']";
+    // This is the most precise locator for the quantity, which is inside a button
+    private final String itemQuantityLocator = "//td[@class='cart_description']/h4/a[text()='%s']/ancestor::tr//button[@class='disabled']";
+    private final String removeItemButtonLocator = "//td[@class='cart_description']/h4/a[text()='%s']/ancestor::tr//a[@class='cart_quantity_delete']";
     private final By emptyCartMessage = By.xpath("//b[text()='Cart is empty!']");
+    private final By proceedToCheckoutButton = By.xpath("//a[contains(text(),'Proceed To Checkout')]");
+
 
     public CartPage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(20)); // Increased wait for CI
     }
 
     private void waitForPageLoad() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(cartItemsTable));
     }
-
-    // --- Core Action Methods ---
 
     public String getItemQuantity(String productName) {
         waitForPageLoad();
@@ -40,9 +41,9 @@ public class CartPage {
     public void removeItemFromCart(String productName) {
         waitForPageLoad();
         By removeButtonLocator = By.xpath(String.format(removeItemButtonLocator, productName));
-        wait.until(ExpectedConditions.elementToBeClickable(removeButtonLocator)).click();
+        WebElement removeButton = wait.until(ExpectedConditions.elementToBeClickable(removeButtonLocator));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", removeButton);
     }
-
     // --- Verification and Navigation Methods ---
 
     public boolean isCartEmpty() {

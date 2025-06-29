@@ -37,10 +37,17 @@ jobs:
 
       # Step 4: (Optional but highly recommended) Upload the test report as an artifact.
       # This allows you to download and view the ExtentReport from the GitHub Actions run.
-      - name: Upload test report
+      - name: Upload HTML test report
         # Only run this step if the previous steps succeeded or failed (to ensure report is always uploaded)
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: extent-report
           path: target/extent-report.html
+      # Step 5: Upload the raw XML test results for deeper analysis
+      - name: Upload XML test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: surefire-reports
+          path: target/surefire-reports/
