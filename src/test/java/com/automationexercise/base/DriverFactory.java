@@ -1,6 +1,5 @@
 package com.automationexercise.base;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -8,34 +7,24 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class DriverFactory {
 
-    private static final ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
-
-    /** Initialise driver based on -Dbrowser param (default chrome) */
-    public static WebDriver initDriver() {
-        String browser = System.getProperty("browser", "chrome").toLowerCase();
-
-        switch (browser) {
-            case "firefox" -> {
-                WebDriverManager.firefoxdriver().setup();
-                tlDriver.set(new FirefoxDriver());
-            }
-            case "edge" -> {
-                WebDriverManager.edgedriver().setup();
-                tlDriver.set(new EdgeDriver());
-            }
-            default -> {                       // chrome
-                WebDriverManager.chromedriver().setup();
-                tlDriver.set(new ChromeDriver());
-            }
+    public static WebDriver getDriver(String browser) {
+        WebDriver driver;
+        switch (browser.toLowerCase()) {
+            case "chrome":
+                // Selenium Manager will automatically download the correct driver
+                driver = new ChromeDriver();
+                break;
+            case "firefox":
+                // Selenium Manager will automatically download the correct driver
+                driver = new FirefoxDriver();
+                break;
+            case "edge":
+                // Selenium Manager will automatically download the correct driver
+                driver = new EdgeDriver();
+                break;
+            default:
+                throw new IllegalArgumentException("Unsupported browser: " + browser);
         }
-        tlDriver.get().manage().window().maximize();
-        return tlDriver.get();
-    }
-
-    public static void quitDriver() {
-        if (tlDriver.get() != null) {
-            tlDriver.get().quit();
-            tlDriver.remove();
-        }
+        return driver;
     }
 }
