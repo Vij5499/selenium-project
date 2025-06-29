@@ -2,160 +2,160 @@
 <testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-29T15:07:18 MST" name="AutomationExercise Suite" finished-at="2025-06-29T15:10:05 MST" duration-ms="167583">
+  <suite started-at="2025-06-29T15:48:59 MST" name="AutomationExercise Suite" finished-at="2025-06-29T15:51:26 MST" duration-ms="147225">
     <groups>
     </groups>
-    <test started-at="2025-06-29T15:07:18 MST" name="All Tests" finished-at="2025-06-29T15:10:05 MST" duration-ms="167583">
+    <test started-at="2025-06-29T15:48:59 MST" name="UI Tests" finished-at="2025-06-29T15:51:26 MST" duration-ms="147225">
       <class name="com.automationexercise.tests.CartFunctionalityTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@333d4a8c]" started-at="2025-06-29T15:09:36 MST" name="setUp" finished-at="2025-06-29T15:09:37 MST" duration-ms="1182" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@821330f]" started-at="2025-06-29T15:51:02 MST" name="setUp" finished-at="2025-06-29T15:51:03 MST" duration-ms="1023" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testProductQuantityInCart()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@333d4a8c]" started-at="2025-06-29T15:09:37 MST" name="testProductQuantityInCart" finished-at="2025-06-29T15:09:48 MST" duration-ms="11129" status="PASS">
+        <test-method signature="testProductQuantityInCart()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@821330f]" started-at="2025-06-29T15:51:03 MST" name="testProductQuantityInCart" finished-at="2025-06-29T15:51:14 MST" duration-ms="10298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProductQuantityInCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@333d4a8c]" started-at="2025-06-29T15:09:48 MST" name="tearDown" finished-at="2025-06-29T15:09:50 MST" duration-ms="1946" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@821330f]" started-at="2025-06-29T15:51:14 MST" name="tearDown" finished-at="2025-06-29T15:51:14 MST" duration-ms="291" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@333d4a8c]" started-at="2025-06-29T15:09:50 MST" name="setUp" finished-at="2025-06-29T15:09:52 MST" duration-ms="1108" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@821330f]" started-at="2025-06-29T15:51:14 MST" name="setUp" finished-at="2025-06-29T15:51:15 MST" duration-ms="1034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testRemoveProductFromCart()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@333d4a8c]" started-at="2025-06-29T15:09:52 MST" name="testRemoveProductFromCart" finished-at="2025-06-29T15:10:05 MST" duration-ms="13245" status="PASS">
+        <test-method signature="testRemoveProductFromCart()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@821330f]" started-at="2025-06-29T15:51:15 MST" name="testRemoveProductFromCart" finished-at="2025-06-29T15:51:26 MST" duration-ms="11158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRemoveProductFromCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@333d4a8c]" started-at="2025-06-29T15:10:05 MST" name="tearDown" finished-at="2025-06-29T15:10:05 MST" duration-ms="428" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@821330f]" started-at="2025-06-29T15:51:26 MST" name="tearDown" finished-at="2025-06-29T15:51:26 MST" duration-ms="271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automationexercise.tests.CartFunctionalityTest -->
       <class name="com.automationexercise.tests.LoginNegativeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.LoginNegativeTest@33ecda92]" started-at="2025-06-29T15:07:43 MST" name="setUp" finished-at="2025-06-29T15:07:44 MST" duration-ms="1192" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.LoginNegativeTest@624ea235]" started-at="2025-06-29T15:49:25 MST" name="setUp" finished-at="2025-06-29T15:49:26 MST" duration-ms="1005" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testInvalidLogin()[pri:0, instance:com.automationexercise.tests.LoginNegativeTest@33ecda92]" started-at="2025-06-29T15:07:44 MST" name="testInvalidLogin" finished-at="2025-06-29T15:07:58 MST" duration-ms="13745" status="PASS">
+        <test-method signature="testInvalidLogin()[pri:0, instance:com.automationexercise.tests.LoginNegativeTest@624ea235]" started-at="2025-06-29T15:49:26 MST" name="testInvalidLogin" finished-at="2025-06-29T15:49:40 MST" duration-ms="13603" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.LoginNegativeTest@33ecda92]" started-at="2025-06-29T15:07:58 MST" name="tearDown" finished-at="2025-06-29T15:07:58 MST" duration-ms="322" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.LoginNegativeTest@624ea235]" started-at="2025-06-29T15:49:40 MST" name="tearDown" finished-at="2025-06-29T15:49:40 MST" duration-ms="217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automationexercise.tests.LoginNegativeTest -->
       <class name="com.automationexercise.tests.CheckoutTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.CheckoutTest@6e2829c7]" started-at="2025-06-29T15:08:09 MST" name="setUp" finished-at="2025-06-29T15:08:11 MST" duration-ms="1279" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.CheckoutTest@782859e]" started-at="2025-06-29T15:49:51 MST" name="setUp" finished-at="2025-06-29T15:49:52 MST" duration-ms="1016" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCheckoutProcess()[pri:0, instance:com.automationexercise.tests.CheckoutTest@6e2829c7]" started-at="2025-06-29T15:08:11 MST" name="testCheckoutProcess" description="Verify checkout process after registration" finished-at="2025-06-29T15:08:53 MST" duration-ms="42272" status="PASS">
+        <test-method signature="testCheckoutProcess()[pri:0, instance:com.automationexercise.tests.CheckoutTest@782859e]" started-at="2025-06-29T15:49:52 MST" name="testCheckoutProcess" description="Verify checkout process after registration" finished-at="2025-06-29T15:50:30 MST" duration-ms="38289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheckoutProcess -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.CheckoutTest@6e2829c7]" started-at="2025-06-29T15:08:53 MST" name="tearDown" finished-at="2025-06-29T15:08:53 MST" duration-ms="421" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.CheckoutTest@782859e]" started-at="2025-06-29T15:50:30 MST" name="tearDown" finished-at="2025-06-29T15:50:30 MST" duration-ms="271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automationexercise.tests.CheckoutTest -->
       <class name="com.automationexercise.tests.ProductDetailsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.ProductDetailsTest@6a8658ff]" started-at="2025-06-29T15:08:56 MST" name="setUp" finished-at="2025-06-29T15:08:57 MST" duration-ms="1252" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.ProductDetailsTest@34bde49d]" started-at="2025-06-29T15:50:32 MST" name="setUp" finished-at="2025-06-29T15:50:33 MST" duration-ms="1037" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testProductDetailsAndAddToCart()[pri:0, instance:com.automationexercise.tests.ProductDetailsTest@6a8658ff]" started-at="2025-06-29T15:08:57 MST" name="testProductDetailsAndAddToCart" finished-at="2025-06-29T15:09:12 MST" duration-ms="14905" status="PASS">
+        <test-method signature="testProductDetailsAndAddToCart()[pri:0, instance:com.automationexercise.tests.ProductDetailsTest@34bde49d]" started-at="2025-06-29T15:50:33 MST" name="testProductDetailsAndAddToCart" finished-at="2025-06-29T15:50:43 MST" duration-ms="9849" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProductDetailsAndAddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.ProductDetailsTest@6a8658ff]" started-at="2025-06-29T15:09:12 MST" name="tearDown" finished-at="2025-06-29T15:09:12 MST" duration-ms="421" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.ProductDetailsTest@34bde49d]" started-at="2025-06-29T15:50:43 MST" name="tearDown" finished-at="2025-06-29T15:50:43 MST" duration-ms="247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automationexercise.tests.ProductDetailsTest -->
       <class name="com.automationexercise.tests.SearchTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.SearchTest@1c742ed4]" started-at="2025-06-29T15:09:12 MST" name="setUp" finished-at="2025-06-29T15:09:14 MST" duration-ms="1198" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.SearchTest@1b1cfb87]" started-at="2025-06-29T15:50:43 MST" name="setUp" finished-at="2025-06-29T15:50:44 MST" duration-ms="1085" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSearchForExistingProduct()[pri:0, instance:com.automationexercise.tests.SearchTest@1c742ed4]" started-at="2025-06-29T15:09:14 MST" name="testSearchForExistingProduct" description="Verify that searching for an existing product returns results." finished-at="2025-06-29T15:09:24 MST" duration-ms="10217" status="PASS">
+        <test-method signature="testSearchForExistingProduct()[pri:0, instance:com.automationexercise.tests.SearchTest@1b1cfb87]" started-at="2025-06-29T15:50:44 MST" name="testSearchForExistingProduct" description="Verify that searching for an existing product returns results." finished-at="2025-06-29T15:50:53 MST" duration-ms="8199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchForExistingProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.SearchTest@1c742ed4]" started-at="2025-06-29T15:09:24 MST" name="tearDown" finished-at="2025-06-29T15:09:26 MST" duration-ms="1922" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.SearchTest@1b1cfb87]" started-at="2025-06-29T15:50:53 MST" name="tearDown" finished-at="2025-06-29T15:50:53 MST" duration-ms="222" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.SearchTest@1c742ed4]" started-at="2025-06-29T15:09:26 MST" name="setUp" finished-at="2025-06-29T15:09:27 MST" duration-ms="1144" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.SearchTest@1b1cfb87]" started-at="2025-06-29T15:50:53 MST" name="setUp" finished-at="2025-06-29T15:50:54 MST" duration-ms="1170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSearchForNonExistentProduct()[pri:0, instance:com.automationexercise.tests.SearchTest@1c742ed4]" started-at="2025-06-29T15:09:27 MST" name="testSearchForNonExistentProduct" description="Verify that searching for a non-existent product shows no results." finished-at="2025-06-29T15:09:36 MST" duration-ms="8924" status="PASS">
+        <test-method signature="testSearchForNonExistentProduct()[pri:0, instance:com.automationexercise.tests.SearchTest@1b1cfb87]" started-at="2025-06-29T15:50:54 MST" name="testSearchForNonExistentProduct" description="Verify that searching for a non-existent product shows no results." finished-at="2025-06-29T15:51:02 MST" duration-ms="8146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchForNonExistentProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.SearchTest@1c742ed4]" started-at="2025-06-29T15:09:36 MST" name="tearDown" finished-at="2025-06-29T15:09:36 MST" duration-ms="326" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.SearchTest@1b1cfb87]" started-at="2025-06-29T15:51:02 MST" name="tearDown" finished-at="2025-06-29T15:51:02 MST" duration-ms="193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automationexercise.tests.SearchTest -->
       <class name="com.automationexercise.tests.RegistrationTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.RegistrationTest@3feb2dda]" started-at="2025-06-29T15:08:53 MST" name="setUp" finished-at="2025-06-29T15:08:55 MST" duration-ms="1259" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.RegistrationTest@23f5b5dc]" started-at="2025-06-29T15:50:30 MST" name="setUp" finished-at="2025-06-29T15:50:31 MST" duration-ms="1018" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSuccessfulRegistration()[pri:0, instance:com.automationexercise.tests.RegistrationTest@3feb2dda]" started-at="2025-06-29T15:08:55 MST" name="testSuccessfulRegistration" finished-at="2025-06-29T15:08:56 MST" duration-ms="949" status="PASS">
+        <test-method signature="testSuccessfulRegistration()[pri:0, instance:com.automationexercise.tests.RegistrationTest@23f5b5dc]" started-at="2025-06-29T15:50:31 MST" name="testSuccessfulRegistration" finished-at="2025-06-29T15:50:32 MST" duration-ms="836" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfulRegistration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.RegistrationTest@3feb2dda]" started-at="2025-06-29T15:08:56 MST" name="tearDown" finished-at="2025-06-29T15:08:56 MST" duration-ms="290" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.RegistrationTest@23f5b5dc]" started-at="2025-06-29T15:50:32 MST" name="tearDown" finished-at="2025-06-29T15:50:32 MST" duration-ms="173" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automationexercise.tests.RegistrationTest -->
       <class name="com.automationexercise.tests.AddToCartTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.AddToCartTest@14fc5f04]" started-at="2025-06-29T15:07:58 MST" name="setUp" finished-at="2025-06-29T15:07:59 MST" duration-ms="1187" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.AddToCartTest@3932c79a]" started-at="2025-06-29T15:49:40 MST" name="setUp" finished-at="2025-06-29T15:49:41 MST" duration-ms="994" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAddProductToCart()[pri:0, instance:com.automationexercise.tests.AddToCartTest@14fc5f04]" started-at="2025-06-29T15:07:59 MST" name="testAddProductToCart" finished-at="2025-06-29T15:08:09 MST" duration-ms="9915" status="PASS">
+        <test-method signature="testAddProductToCart()[pri:0, instance:com.automationexercise.tests.AddToCartTest@3932c79a]" started-at="2025-06-29T15:49:41 MST" name="testAddProductToCart" finished-at="2025-06-29T15:49:50 MST" duration-ms="9395" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddProductToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.AddToCartTest@14fc5f04]" started-at="2025-06-29T15:08:09 MST" name="tearDown" finished-at="2025-06-29T15:08:09 MST" duration-ms="390" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.AddToCartTest@3932c79a]" started-at="2025-06-29T15:49:50 MST" name="tearDown" finished-at="2025-06-29T15:49:51 MST" duration-ms="234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automationexercise.tests.AddToCartTest -->
       <class name="com.automationexercise.tests.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.HomePageTest@4c163e3]" started-at="2025-06-29T15:07:18 MST" name="setUp" finished-at="2025-06-29T15:07:20 MST" duration-ms="2363" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.HomePageTest@3de8f619]" started-at="2025-06-29T15:48:59 MST" name="setUp" finished-at="2025-06-29T15:49:03 MST" duration-ms="3649" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testHomePageNavigation()[pri:0, instance:com.automationexercise.tests.HomePageTest@4c163e3]" started-at="2025-06-29T15:07:20 MST" name="testHomePageNavigation" finished-at="2025-06-29T15:07:27 MST" duration-ms="7216" status="PASS">
+        <test-method signature="testHomePageNavigation()[pri:0, instance:com.automationexercise.tests.HomePageTest@3de8f619]" started-at="2025-06-29T15:49:03 MST" name="testHomePageNavigation" finished-at="2025-06-29T15:49:10 MST" duration-ms="7293" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePageNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.HomePageTest@4c163e3]" started-at="2025-06-29T15:07:27 MST" name="tearDown" finished-at="2025-06-29T15:07:28 MST" duration-ms="284" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.HomePageTest@3de8f619]" started-at="2025-06-29T15:49:10 MST" name="tearDown" finished-at="2025-06-29T15:49:11 MST" duration-ms="232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automationexercise.tests.HomePageTest -->
       <class name="com.automationexercise.tests.LoginPositiveTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.LoginPositiveTest@15888343]" started-at="2025-06-29T15:07:28 MST" name="setUp" finished-at="2025-06-29T15:07:29 MST" duration-ms="1291" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automationexercise.tests.LoginPositiveTest@6b09fb41]" started-at="2025-06-29T15:49:11 MST" name="setUp" finished-at="2025-06-29T15:49:12 MST" duration-ms="1128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testValidLogin()[pri:0, instance:com.automationexercise.tests.LoginPositiveTest@15888343]" started-at="2025-06-29T15:07:29 MST" name="testValidLogin" finished-at="2025-06-29T15:07:42 MST" duration-ms="13423" status="PASS">
+        <test-method signature="testValidLogin()[pri:0, instance:com.automationexercise.tests.LoginPositiveTest@6b09fb41]" started-at="2025-06-29T15:49:12 MST" name="testValidLogin" finished-at="2025-06-29T15:49:25 MST" duration-ms="13311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.LoginPositiveTest@15888343]" started-at="2025-06-29T15:07:42 MST" name="tearDown" finished-at="2025-06-29T15:07:43 MST" duration-ms="294" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.LoginPositiveTest@6b09fb41]" started-at="2025-06-29T15:49:25 MST" name="tearDown" finished-at="2025-06-29T15:49:25 MST" duration-ms="208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automationexercise.tests.LoginPositiveTest -->
-    </test> <!-- All Tests -->
+    </test> <!-- UI Tests -->
   </suite> <!-- AutomationExercise Suite -->
 </testng-results>

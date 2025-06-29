@@ -13,7 +13,6 @@
       <class name="com.automationexercise.tests.LoginNegativeTest"/>
       <class name="com.automationexercise.tests.AddToCartTest"/>
       <class name="com.automationexercise.tests.CheckoutTest"/>
-      <class name="com.automationexercise.tests.SampleTest"/>
       <class name="com.automationexercise.tests.RegistrationTest"/>
       <class name="com.automationexercise.tests.ProductDetailsTest"/>
       <class name="com.automationexercise.tests.SearchTest"/>

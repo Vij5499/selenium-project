@@ -3,6 +3,7 @@ com\automationexercise\base\BaseTest.class
 com\automationexercise\base\DriverFactory.class
 com\automationexercise\tests\LoginPositiveTest.class
 com\automationexercise\tests\SearchTest.class
+com\automationexercise\tests\api\APITests.class
 com\automationexercise\tests\RegistrationTest.class
 com\automationexercise\tests\ProductDetailsTest.class
 com\automationexercise\utils\ExtentManager.class
