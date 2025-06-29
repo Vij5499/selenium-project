@@ -1,21 +1,30 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="AutomationExercise Suite">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AutomationExercise Suite" parallel="tests" thread-count="2">
   <listeners>
       <listener class-name="com.automationexercise.utils.ExtentReporterNG"/>
       <listener class-name="com.automationexercise.utils.ScreenshotListener"/>
   </listeners>
-  <test name="All Tests">
+
+  <test name="UI Tests">
     <classes>
-      <class name="com.automationexercise.tests.HomePageTest" />
-      <class name="com.automationexercise.tests.LoginPositiveTest" />
-      <class name="com.automationexercise.tests.LoginNegativeTest" />
-      <class name="com.automationexercise.tests.AddToCartTest" />
-      <class name="com.automationexercise.tests.CheckoutTest" />
-      <class name="com.automationexercise.tests.RegistrationTest" />
+      <class name="com.automationexercise.tests.HomePageTest"/>
+      <class name="com.automationexercise.tests.LoginPositiveTest"/>
+      <class name="com.automationexercise.tests.LoginNegativeTest"/>
+      <class name="com.automationexercise.tests.AddToCartTest"/>
+      <class name="com.automationexercise.tests.CheckoutTest"/>
+      <class name="com.automationexercise.tests.SampleTest"/>
+      <class name="com.automationexercise.tests.RegistrationTest"/>
       <class name="com.automationexercise.tests.ProductDetailsTest"/>
       <class name="com.automationexercise.tests.SearchTest"/>
       <class name="com.automationexercise.tests.CartFunctionalityTest"/>
-
     </classes>
   </test>
+
+  <test name="API Tests">
+    <classes>
+      <class name="com.automationexercise.tests.api.APITests"/>
+    </classes>
+  </test>
+  
 </suite>
