@@ -8,7 +8,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
 
-    // Use ThreadLocal to ensure each thread has its own WebDriver instance
     private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     public static WebDriver getDriver(String browser) {
@@ -20,6 +19,8 @@ public class DriverFactory {
                     options.addArguments("--headless");
                     options.addArguments("--no-sandbox");
                     options.addArguments("--disable-dev-shm-usage");
+                    // Add this argument for more stability in some environments
+                    options.addArguments("--disable-gpu"); 
                     options.addArguments("--window-size=1920,1080");
                     newDriver = new ChromeDriver(options);
                     break;
@@ -34,6 +35,9 @@ public class DriverFactory {
             }
             driver.set(newDriver);
         }
+        return driver.get();
+    }
+    public static WebDriver getDriverFromThread() {
         return driver.get();
     }
 

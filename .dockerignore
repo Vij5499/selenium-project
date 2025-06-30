@@ -1,0 +1,9 @@
+# Ignore the Maven build output directory
+target/
+
+# Ignore IDE-specific files
+.idea/
+*.iml
+
+# Ignore local log files if any
+*.log

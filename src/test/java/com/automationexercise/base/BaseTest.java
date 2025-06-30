@@ -5,27 +5,29 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters; // <-- IMPORT ADDED
 
 @Listeners(ScreenshotListener.class)
 public class BaseTest {
 
-    // This is now a ThreadLocal WebDriver, managed by the DriverFactory
     protected WebDriver driver;
 
-    public WebDriver getDriver() {
-        return DriverFactory.getDriver("chrome");
-    }
-
+    // This method now accepts a 'browser' parameter from testng.xml
+    @Parameters("browser")
     @BeforeMethod
-    public void setUp() {
-        // Get the driver instance for the current thread
-        driver = DriverFactory.getDriver("chrome");
+    public void setUp(String browser) {
+        // Get the driver instance for the specified browser
+        driver = DriverFactory.getDriver(browser);
         driver.manage().window().maximize();
     }
 
     @AfterMethod
     public void tearDown() {
-        // Quit the driver and remove it from the ThreadLocal pool
         DriverFactory.quitDriver();
+    }
+
+    public WebDriver getDriver() {
+        // This method needs to be updated to get the current thread's driver
+        return DriverFactory.getDriverFromThread();
     }
 }
