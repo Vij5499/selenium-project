@@ -1,7 +1,9 @@
 package com.automationexercise.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor; // <-- IMPORT ADDED
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement; // <-- IMPORT ADDED
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
@@ -24,30 +26,16 @@ public class RegistrationPage {
     private final By accountCreatedTitle = By.xpath("//h2[@data-qa='account-created']");
     private final By continueButton = By.xpath("//a[@data-qa='continue-button']");
 
-    // Ad-related locators
-    private final By adFrameByTitle = By.xpath("//iframe[@title='Advertisement']");
-    private final By adCloseButton = By.id("dismiss-button");
-
     public RegistrationPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    private void handleAdPopup() {
-        try {
-            wait.withTimeout(Duration.ofSeconds(5)).until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(adFrameByTitle));
-            wait.until(ExpectedConditions.elementToBeClickable(adCloseButton)).click();
-            driver.switchTo().defaultContent();
-        } catch (Exception e) {
-            System.out.println("Ad on Registration page did not appear or could not be closed. Continuing...");
-            driver.switchTo().defaultContent();
-        }
-    }
-    
-    // We will now call handleAdPopup before clicking the final button
+    // THE DEFINITIVE FIX IS IN THIS METHOD
     public void clickCreateAccount() {
-        handleAdPopup();
-        wait.until(ExpectedConditions.elementToBeClickable(createAccountButton)).click();
+        WebElement createButton = wait.until(ExpectedConditions.elementToBeClickable(createAccountButton));
+        // Use a JavaScript click to bypass any overlays or ads.
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", createButton);
     }
 
     // --- Other methods remain the same ---
