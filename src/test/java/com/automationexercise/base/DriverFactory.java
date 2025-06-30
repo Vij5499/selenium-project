@@ -2,37 +2,45 @@ package com.automationexercise.base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions; // <-- IMPORT ADDED
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverFactory {
 
-    public static WebDriver getDriver(String browser) {
-        switch (browser.toLowerCase()) {
-            case "chrome":
-                // DEFINITIVE FIX for CI/CD environment
-                ChromeOptions options = new ChromeOptions();
-                // Run Chrome in headless mode (no UI)
-                options.addArguments("--headless");
-                // The next two arguments are required for running in a Linux/Docker container like GitHub Actions
-                options.addArguments("--no-sandbox");
-                options.addArguments("--disable-dev-shm-usage");
-                // Set a custom window size, which is important for headless mode
-                options.addArguments("--window-size=1920,1080");
-                
-                return new ChromeDriver(options);
+    // Use ThreadLocal to ensure each thread has its own WebDriver instance
+    private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-            case "firefox":
-                // Similar options can be added for Firefox if needed
-                return new FirefoxDriver();
-                
-            case "edge":
-                // Similar options can be added for Edge if needed
-                return new EdgeDriver();
-                
-            default:
-                throw new IllegalArgumentException("Unsupported browser: " + browser);
+    public static WebDriver getDriver(String browser) {
+        if (driver.get() == null) {
+            WebDriver newDriver;
+            switch (browser.toLowerCase()) {
+                case "chrome":
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--headless");
+                    options.addArguments("--no-sandbox");
+                    options.addArguments("--disable-dev-shm-usage");
+                    options.addArguments("--window-size=1920,1080");
+                    newDriver = new ChromeDriver(options);
+                    break;
+                case "firefox":
+                    newDriver = new FirefoxDriver();
+                    break;
+                case "edge":
+                    newDriver = new EdgeDriver();
+                    break;
+                default:
+                    throw new IllegalArgumentException("Unsupported browser: " + browser);
+            }
+            driver.set(newDriver);
+        }
+        return driver.get();
+    }
+
+    public static void quitDriver() {
+        if (driver.get() != null) {
+            driver.get().quit();
+            driver.remove();
         }
     }
 }

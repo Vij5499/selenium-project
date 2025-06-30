@@ -4,6 +4,7 @@ import com.automationexercise.base.BaseTest;
 import com.automationexercise.pages.HomePage;
 import com.automationexercise.pages.LoginPage;
 import org.testng.annotations.Test;
+import org.testng.Assert;
 
 public class LoginNegativeTest extends BaseTest {
 
@@ -18,5 +19,6 @@ public class LoginNegativeTest extends BaseTest {
         loginPage.enterLoginPassword("invalidpassword");
         loginPage.clickLogin();
         // TODO: Add an assertion here to check for an error message
+        Assert.assertTrue(loginPage.getLoginErrorText().contains("incorrect"), "Error message should be visible for invalid login.");
     }
 }

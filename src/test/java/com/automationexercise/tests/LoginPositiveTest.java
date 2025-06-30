@@ -4,6 +4,7 @@ import com.automationexercise.base.BaseTest;
 import com.automationexercise.pages.HomePage;
 import com.automationexercise.pages.LoginPage;
 import org.testng.annotations.Test;
+import org.testng.Assert;
 
 public class LoginPositiveTest extends BaseTest {
 
@@ -19,5 +20,6 @@ public class LoginPositiveTest extends BaseTest {
         loginPage.enterLoginPassword("your-password");
         loginPage.clickLogin();
         // TODO: Add an assertion here to verify successful login
+       
     }
 }

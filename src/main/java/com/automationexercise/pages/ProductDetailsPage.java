@@ -14,8 +14,6 @@ public class ProductDetailsPage {
 
     // Locators for the product details page
     private final By productName = By.xpath("//div[@class='product-information']/h2");
-    private final By productCategory = By.xpath("//div[@class='product-information']/p[contains(., 'Category')]");
-    private final By productPrice = By.xpath("//div[@class='product-information']/span/span");
     private final By addToCartButton = By.xpath("//button[@type='button']");
     private final By viewCartLink = By.xpath("//u[text()='View Cart']");
     private final By quantityInput = By.id("quantity");

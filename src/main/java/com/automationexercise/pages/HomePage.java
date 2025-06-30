@@ -16,12 +16,16 @@ public class HomePage {
     private final By productsLink = By.xpath("//a[@href='/products']");
     private final By logo = By.xpath("//img[@alt='Website for automation practice']");
     private final By signupLoginLink = By.xpath("//a[contains(.,'Signup / Login')]");
-    private final By searchInput = By.id("search_product");
-    private final By searchButton = By.id("submit_search");
-
     // --- Ad Locators ---
     private final By adFrameByTitle = By.xpath("//iframe[@title='Advertisement']");
     private final By adCloseButton = By.id("dismiss-button");
+    // Add this locator
+    private final By loggedInAs = By.xpath("//a[contains(text(), 'Logged in as')]");
+
+    // Add this method
+    public boolean isLoggedInAsVisible() {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(loggedInAs)).isDisplayed();
+    }
 
     public HomePage(WebDriver driver) {
         this.driver = driver;

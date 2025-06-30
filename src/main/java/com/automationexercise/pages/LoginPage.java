@@ -22,6 +22,7 @@ public class LoginPage {
     // Ad-related locators
     private final By adFrameByTitle = By.xpath("//iframe[@title='Advertisement']");
     private final By adCloseButton = By.id("dismiss-button");
+    private final By loginError = By.xpath("//p[contains(text(), 'incorrect')]");
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
@@ -64,5 +65,8 @@ public class LoginPage {
         handleAdPopup();
         wait.until(ExpectedConditions.elementToBeClickable(signupButton)).click();
         return new RegistrationPage(driver);
+    }
+    public String getLoginErrorText() {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(loginError)).getText();
     }
 }

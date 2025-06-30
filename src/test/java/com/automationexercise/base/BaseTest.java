@@ -9,23 +9,23 @@ import org.testng.annotations.Listeners;
 @Listeners(ScreenshotListener.class)
 public class BaseTest {
 
+    // This is now a ThreadLocal WebDriver, managed by the DriverFactory
     protected WebDriver driver;
 
     public WebDriver getDriver() {
-        return driver;
-    }    
+        return DriverFactory.getDriver("chrome");
+    }
+
     @BeforeMethod
     public void setUp() {
-        // The DriverFactory will now handle setting up the driver
-        // without WebDriverManager.
+        // Get the driver instance for the current thread
         driver = DriverFactory.getDriver("chrome");
         driver.manage().window().maximize();
     }
 
     @AfterMethod
     public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
+        // Quit the driver and remove it from the ThreadLocal pool
+        DriverFactory.quitDriver();
     }
 }
