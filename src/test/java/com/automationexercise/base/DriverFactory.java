@@ -5,28 +5,31 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions; // <-- IMPORT ADDED
 
 public class DriverFactory {
 
+    // ThreadLocal will store a driver instance for each thread
     private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     public static WebDriver getDriver(String browser) {
+        // This method now correctly creates a new driver only if one doesn't exist for the current thread
         if (driver.get() == null) {
             WebDriver newDriver;
             switch (browser.toLowerCase()) {
                 case "chrome":
-                    ChromeOptions options = new ChromeOptions();
-                    options.addArguments("--headless");
-                    options.addArguments("--no-sandbox");
-                    options.addArguments("--disable-dev-shm-usage");
-                    // Add this argument for more stability in some environments
-                    options.addArguments("--disable-gpu"); 
-                    options.addArguments("--window-size=1920,1080");
-                    newDriver = new ChromeDriver(options);
+                    ChromeOptions chromeOptions = new ChromeOptions();
+                    chromeOptions.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1920,1080");
+                    newDriver = new ChromeDriver(chromeOptions);
                     break;
+                
                 case "firefox":
-                    newDriver = new FirefoxDriver();
+                    // DEFINITIVE FIX: Add headless options for Firefox
+                    FirefoxOptions firefoxOptions = new FirefoxOptions();
+                    firefoxOptions.addArguments("-headless");
+                    newDriver = new FirefoxDriver(firefoxOptions);
                     break;
+                    
                 case "edge":
                     newDriver = new EdgeDriver();
                     break;
@@ -37,6 +40,8 @@ public class DriverFactory {
         }
         return driver.get();
     }
+
+    // This is a new helper method for the listener to get the correct driver
     public static WebDriver getDriverFromThread() {
         return driver.get();
     }
@@ -44,7 +49,7 @@ public class DriverFactory {
     public static void quitDriver() {
         if (driver.get() != null) {
             driver.get().quit();
-            driver.remove();
+            driver.remove(); // This is crucial to prevent memory leaks
         }
     }
 }
