@@ -1,219 +1,242 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="22" passed="22" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-30T03:10:43 UTC" name="Cross-Browser Test Suite" finished-at="2025-06-30T03:15:45 UTC" duration-ms="301954">
+  <suite started-at="2025-06-30T11:17:35 MST" name="Cross-Browser Test Suite" finished-at="2025-06-30T11:22:40 MST" duration-ms="304493">
     <groups>
     </groups>
-    <test started-at="2025-06-30T03:10:43 UTC" name="UI Tests - Firefox" finished-at="2025-06-30T03:15:45 UTC" duration-ms="301954">
+    <test started-at="2025-06-30T11:17:35 MST" name="UI Tests - Chrome" finished-at="2025-06-30T11:21:00 MST" duration-ms="204572">
       <class name="com.automationexercise.tests.CartFunctionalityTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@750e2b97]" started-at="2025-06-30T03:14:55 UTC" name="setUp" finished-at="2025-06-30T03:14:59 UTC" duration-ms="3460" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@5db6b9cd]" started-at="2025-06-30T11:20:24 MST" name="setUp" finished-at="2025-06-30T11:20:25 MST" duration-ms="1137" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testProductQuantityInCart()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@750e2b97]" started-at="2025-06-30T03:14:59 UTC" name="testProductQuantityInCart" finished-at="2025-06-30T03:15:18 UTC" duration-ms="19448" status="PASS">
+        <test-method signature="testProductQuantityInCart()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@5db6b9cd]" started-at="2025-06-30T11:20:25 MST" name="testProductQuantityInCart" finished-at="2025-06-30T11:20:43 MST" duration-ms="17744" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProductQuantityInCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@750e2b97]" started-at="2025-06-30T03:15:18 UTC" name="tearDown" finished-at="2025-06-30T03:15:20 UTC" duration-ms="1714" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@5db6b9cd]" started-at="2025-06-30T11:20:43 MST" name="tearDown" finished-at="2025-06-30T11:20:43 MST" duration-ms="348" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@750e2b97]" started-at="2025-06-30T03:15:20 UTC" name="setUp" finished-at="2025-06-30T03:15:24 UTC" duration-ms="3936" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@5db6b9cd]" started-at="2025-06-30T11:20:43 MST" name="setUp" finished-at="2025-06-30T11:20:45 MST" duration-ms="1742" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testRemoveProductFromCart()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@750e2b97]" started-at="2025-06-30T03:15:24 UTC" name="testRemoveProductFromCart" finished-at="2025-06-30T03:15:43 UTC" duration-ms="19219" status="PASS">
+        <test-method signature="testRemoveProductFromCart()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@5db6b9cd]" started-at="2025-06-30T11:20:45 MST" name="testRemoveProductFromCart" finished-at="2025-06-30T11:21:00 MST" duration-ms="14903" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRemoveProductFromCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@750e2b97]" started-at="2025-06-30T03:15:43 UTC" name="tearDown" finished-at="2025-06-30T03:15:45 UTC" duration-ms="1598" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@5db6b9cd]" started-at="2025-06-30T11:21:00 MST" name="tearDown" finished-at="2025-06-30T11:21:00 MST" duration-ms="489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automationexercise.tests.CartFunctionalityTest -->
       <class name="com.automationexercise.tests.LoginNegativeTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.LoginNegativeTest@63376bed]" started-at="2025-06-30T03:11:37 UTC" name="setUp" finished-at="2025-06-30T03:11:41 UTC" duration-ms="3932" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.LoginNegativeTest@782859e]" started-at="2025-06-30T11:18:12 MST" name="setUp" finished-at="2025-06-30T11:18:14 MST" duration-ms="1411" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testInvalidLogin()[pri:0, instance:com.automationexercise.tests.LoginNegativeTest@63376bed]" started-at="2025-06-30T03:11:41 UTC" name="testInvalidLogin" finished-at="2025-06-30T03:11:58 UTC" duration-ms="16428" status="PASS">
+        <test-method signature="testInvalidLogin()[pri:0, instance:com.automationexercise.tests.LoginNegativeTest@782859e]" started-at="2025-06-30T11:18:14 MST" name="testInvalidLogin" finished-at="2025-06-30T11:18:29 MST" duration-ms="14850" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.LoginNegativeTest@63376bed]" started-at="2025-06-30T03:11:58 UTC" name="tearDown" finished-at="2025-06-30T03:11:59 UTC" duration-ms="982" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.LoginNegativeTest@782859e]" started-at="2025-06-30T11:18:29 MST" name="tearDown" finished-at="2025-06-30T11:18:29 MST" duration-ms="393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automationexercise.tests.LoginNegativeTest -->
       <class name="com.automationexercise.tests.CheckoutTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.CheckoutTest@d86a6f]" started-at="2025-06-30T03:12:23 UTC" name="setUp" finished-at="2025-06-30T03:12:27 UTC" duration-ms="3636" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.CheckoutTest@34bde49d]" started-at="2025-06-30T11:18:44 MST" name="setUp" finished-at="2025-06-30T11:18:46 MST" duration-ms="1360" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testCheckoutProcess()[pri:0, instance:com.automationexercise.tests.CheckoutTest@d86a6f]" started-at="2025-06-30T03:12:27 UTC" name="testCheckoutProcess" description="Verify checkout process after registration" finished-at="2025-06-30T03:13:34 UTC" duration-ms="67590" status="PASS">
+        <test-method signature="testCheckoutProcess()[pri:0, instance:com.automationexercise.tests.CheckoutTest@34bde49d]" started-at="2025-06-30T11:18:46 MST" name="testCheckoutProcess" description="Verify checkout process after registration" finished-at="2025-06-30T11:19:34 MST" duration-ms="48423" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheckoutProcess -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.CheckoutTest@d86a6f]" started-at="2025-06-30T03:13:34 UTC" name="tearDown" finished-at="2025-06-30T03:13:36 UTC" duration-ms="1840" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.CheckoutTest@34bde49d]" started-at="2025-06-30T11:19:34 MST" name="tearDown" finished-at="2025-06-30T11:19:35 MST" duration-ms="680" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automationexercise.tests.CheckoutTest -->
       <class name="com.automationexercise.tests.ProductDetailsTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.ProductDetailsTest@5ab956d7]" started-at="2025-06-30T03:13:44 UTC" name="setUp" finished-at="2025-06-30T03:13:48 UTC" duration-ms="3478" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.ProductDetailsTest@821330f]" started-at="2025-06-30T11:19:38 MST" name="setUp" finished-at="2025-06-30T11:19:39 MST" duration-ms="1026" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testProductDetailsAndAddToCart()[pri:0, instance:com.automationexercise.tests.ProductDetailsTest@5ab956d7]" started-at="2025-06-30T03:13:48 UTC" name="testProductDetailsAndAddToCart" finished-at="2025-06-30T03:14:05 UTC" duration-ms="17697" status="PASS">
+        <test-method signature="testProductDetailsAndAddToCart()[pri:0, instance:com.automationexercise.tests.ProductDetailsTest@821330f]" started-at="2025-06-30T11:19:39 MST" name="testProductDetailsAndAddToCart" finished-at="2025-06-30T11:19:55 MST" duration-ms="15967" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProductDetailsAndAddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.ProductDetailsTest@5ab956d7]" started-at="2025-06-30T03:14:05 UTC" name="tearDown" finished-at="2025-06-30T03:14:06 UTC" duration-ms="1244" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.ProductDetailsTest@821330f]" started-at="2025-06-30T11:19:55 MST" name="tearDown" finished-at="2025-06-30T11:19:55 MST" duration-ms="374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automationexercise.tests.ProductDetailsTest -->
       <class name="com.automationexercise.tests.SearchTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.SearchTest@3646a422]" started-at="2025-06-30T03:14:06 UTC" name="setUp" finished-at="2025-06-30T03:14:10 UTC" duration-ms="4005" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.SearchTest@6f43c82]" started-at="2025-06-30T11:19:55 MST" name="setUp" finished-at="2025-06-30T11:19:56 MST" duration-ms="1301" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSearchForExistingProduct()[pri:0, instance:com.automationexercise.tests.SearchTest@3646a422]" started-at="2025-06-30T03:14:10 UTC" name="testSearchForExistingProduct" description="Verify that searching for an existing product returns results." finished-at="2025-06-30T03:14:26 UTC" duration-ms="15672" status="PASS">
+        <test-method signature="testSearchForExistingProduct()[pri:0, instance:com.automationexercise.tests.SearchTest@6f43c82]" started-at="2025-06-30T11:19:56 MST" name="testSearchForExistingProduct" description="Verify that searching for an existing product returns results." finished-at="2025-06-30T11:20:08 MST" duration-ms="11332" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchForExistingProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.SearchTest@3646a422]" started-at="2025-06-30T03:14:26 UTC" name="tearDown" finished-at="2025-06-30T03:14:28 UTC" duration-ms="1507" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.SearchTest@6f43c82]" started-at="2025-06-30T11:20:08 MST" name="tearDown" finished-at="2025-06-30T11:20:08 MST" duration-ms="436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.SearchTest@3646a422]" started-at="2025-06-30T03:14:28 UTC" name="setUp" finished-at="2025-06-30T03:14:32 UTC" duration-ms="3994" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.SearchTest@6f43c82]" started-at="2025-06-30T11:20:08 MST" name="setUp" finished-at="2025-06-30T11:20:11 MST" duration-ms="2378" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSearchForNonExistentProduct()[pri:0, instance:com.automationexercise.tests.SearchTest@3646a422]" started-at="2025-06-30T03:14:32 UTC" name="testSearchForNonExistentProduct" description="Verify that searching for a non-existent product shows no results." finished-at="2025-06-30T03:14:54 UTC" duration-ms="22097" status="PASS">
+        <test-method signature="testSearchForNonExistentProduct()[pri:0, instance:com.automationexercise.tests.SearchTest@6f43c82]" started-at="2025-06-30T11:20:11 MST" name="testSearchForNonExistentProduct" description="Verify that searching for a non-existent product shows no results." finished-at="2025-06-30T11:20:22 MST" duration-ms="11190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchForNonExistentProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.SearchTest@3646a422]" started-at="2025-06-30T03:14:54 UTC" name="tearDown" finished-at="2025-06-30T03:14:55 UTC" duration-ms="1605" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.SearchTest@6f43c82]" started-at="2025-06-30T11:20:22 MST" name="tearDown" finished-at="2025-06-30T11:20:24 MST" duration-ms="1908" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automationexercise.tests.SearchTest -->
       <class name="com.automationexercise.tests.RegistrationTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.RegistrationTest@2892d68]" started-at="2025-06-30T03:13:36 UTC" name="setUp" finished-at="2025-06-30T03:13:40 UTC" duration-ms="4255" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.RegistrationTest@1b1cfb87]" started-at="2025-06-30T11:19:35 MST" name="setUp" finished-at="2025-06-30T11:19:36 MST" duration-ms="1441" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSuccessfulRegistration()[pri:0, instance:com.automationexercise.tests.RegistrationTest@2892d68]" started-at="2025-06-30T03:13:40 UTC" name="testSuccessfulRegistration" finished-at="2025-06-30T03:13:43 UTC" duration-ms="2373" status="PASS">
+        <test-method signature="testSuccessfulRegistration()[pri:0, instance:com.automationexercise.tests.RegistrationTest@1b1cfb87]" started-at="2025-06-30T11:19:36 MST" name="testSuccessfulRegistration" finished-at="2025-06-30T11:19:38 MST" duration-ms="1482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfulRegistration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.RegistrationTest@2892d68]" started-at="2025-06-30T03:13:43 UTC" name="tearDown" finished-at="2025-06-30T03:13:44 UTC" duration-ms="1237" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.RegistrationTest@1b1cfb87]" started-at="2025-06-30T11:19:38 MST" name="tearDown" finished-at="2025-06-30T11:19:38 MST" duration-ms="168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automationexercise.tests.RegistrationTest -->
       <class name="com.automationexercise.tests.AddToCartTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.AddToCartTest@4145bad8]" started-at="2025-06-30T03:11:59 UTC" name="setUp" finished-at="2025-06-30T03:12:02 UTC" duration-ms="3737" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.AddToCartTest@23f5b5dc]" started-at="2025-06-30T11:18:29 MST" name="setUp" finished-at="2025-06-30T11:18:31 MST" duration-ms="1473" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testAddProductToCart()[pri:0, instance:com.automationexercise.tests.AddToCartTest@4145bad8]" started-at="2025-06-30T03:12:02 UTC" name="testAddProductToCart" finished-at="2025-06-30T03:12:22 UTC" duration-ms="19313" status="PASS">
+        <test-method signature="testAddProductToCart()[pri:0, instance:com.automationexercise.tests.AddToCartTest@23f5b5dc]" started-at="2025-06-30T11:18:31 MST" name="testAddProductToCart" finished-at="2025-06-30T11:18:44 MST" duration-ms="13159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddProductToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.AddToCartTest@4145bad8]" started-at="2025-06-30T03:12:22 UTC" name="tearDown" finished-at="2025-06-30T03:12:23 UTC" duration-ms="1381" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.AddToCartTest@23f5b5dc]" started-at="2025-06-30T11:18:44 MST" name="tearDown" finished-at="2025-06-30T11:18:44 MST" duration-ms="476" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automationexercise.tests.AddToCartTest -->
       <class name="com.automationexercise.tests.HomePageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.HomePageTest@738dc9b]" started-at="2025-06-30T03:10:43 UTC" name="setUp" finished-at="2025-06-30T03:10:57 UTC" duration-ms="13748" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.HomePageTest@4e5ed836]" started-at="2025-06-30T11:17:36 MST" name="setUp" finished-at="2025-06-30T11:17:41 MST" duration-ms="4975" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testHomePageNavigation()[pri:0, instance:com.automationexercise.tests.HomePageTest@738dc9b]" started-at="2025-06-30T03:10:57 UTC" name="testHomePageNavigation" finished-at="2025-06-30T03:11:10 UTC" duration-ms="13607" status="PASS">
+        <test-method signature="testHomePageNavigation()[pri:0, instance:com.automationexercise.tests.HomePageTest@4e5ed836]" started-at="2025-06-30T11:17:41 MST" name="testHomePageNavigation" finished-at="2025-06-30T11:17:52 MST" duration-ms="11773" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePageNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.HomePageTest@738dc9b]" started-at="2025-06-30T03:11:10 UTC" name="tearDown" finished-at="2025-06-30T03:11:12 UTC" duration-ms="1503" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.HomePageTest@4e5ed836]" started-at="2025-06-30T11:17:52 MST" name="tearDown" finished-at="2025-06-30T11:17:53 MST" duration-ms="910" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automationexercise.tests.HomePageTest -->
       <class name="com.automationexercise.tests.LoginPositiveTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.LoginPositiveTest@3c77d488]" started-at="2025-06-30T03:11:12 UTC" name="setUp" finished-at="2025-06-30T03:11:16 UTC" duration-ms="3699" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.LoginPositiveTest@3932c79a]" started-at="2025-06-30T11:17:53 MST" name="setUp" finished-at="2025-06-30T11:17:55 MST" duration-ms="1645" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidLogin()[pri:0, instance:com.automationexercise.tests.LoginPositiveTest@3932c79a]" started-at="2025-06-30T11:17:55 MST" name="testValidLogin" finished-at="2025-06-30T11:18:12 MST" duration-ms="17048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.LoginPositiveTest@3932c79a]" started-at="2025-06-30T11:18:12 MST" name="tearDown" finished-at="2025-06-30T11:18:12 MST" duration-ms="443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationexercise.tests.LoginPositiveTest -->
+    </test> <!-- UI Tests - Chrome -->
+    <test started-at="2025-06-30T11:17:35 MST" name="UI Tests - Firefox" finished-at="2025-06-30T11:22:40 MST" duration-ms="304493">
+      <class name="com.automationexercise.tests.CartFunctionalityTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@1e4f4a5c]" started-at="2025-06-30T11:21:52 MST" name="setUp" finished-at="2025-06-30T11:21:56 MST" duration-ms="4230" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -224,11 +247,217 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testValidLogin()[pri:0, instance:com.automationexercise.tests.LoginPositiveTest@3c77d488]" started-at="2025-06-30T03:11:16 UTC" name="testValidLogin" finished-at="2025-06-30T03:11:36 UTC" duration-ms="20468" status="PASS">
+        <test-method signature="testProductQuantityInCart()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@1e4f4a5c]" started-at="2025-06-30T11:21:56 MST" name="testProductQuantityInCart" finished-at="2025-06-30T11:22:14 MST" duration-ms="18020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductQuantityInCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@1e4f4a5c]" started-at="2025-06-30T11:22:14 MST" name="tearDown" finished-at="2025-06-30T11:22:15 MST" duration-ms="1471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@1e4f4a5c]" started-at="2025-06-30T11:22:15 MST" name="setUp" finished-at="2025-06-30T11:22:19 MST" duration-ms="3867" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRemoveProductFromCart()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@1e4f4a5c]" started-at="2025-06-30T11:22:19 MST" name="testRemoveProductFromCart" finished-at="2025-06-30T11:22:38 MST" duration-ms="19216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveProductFromCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.CartFunctionalityTest@1e4f4a5c]" started-at="2025-06-30T11:22:38 MST" name="tearDown" finished-at="2025-06-30T11:22:40 MST" duration-ms="1546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationexercise.tests.CartFunctionalityTest -->
+      <class name="com.automationexercise.tests.LoginNegativeTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.LoginNegativeTest@41330d4f]" started-at="2025-06-30T11:18:28 MST" name="setUp" finished-at="2025-06-30T11:18:34 MST" duration-ms="5805" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidLogin()[pri:0, instance:com.automationexercise.tests.LoginNegativeTest@41330d4f]" started-at="2025-06-30T11:18:34 MST" name="testInvalidLogin" finished-at="2025-06-30T11:18:55 MST" duration-ms="20735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.LoginNegativeTest@41330d4f]" started-at="2025-06-30T11:18:55 MST" name="tearDown" finished-at="2025-06-30T11:18:57 MST" duration-ms="2610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationexercise.tests.LoginNegativeTest -->
+      <class name="com.automationexercise.tests.CheckoutTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.CheckoutTest@3e0e1046]" started-at="2025-06-30T11:19:25 MST" name="setUp" finished-at="2025-06-30T11:19:29 MST" duration-ms="4410" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCheckoutProcess()[pri:0, instance:com.automationexercise.tests.CheckoutTest@3e0e1046]" started-at="2025-06-30T11:19:29 MST" name="testCheckoutProcess" description="Verify checkout process after registration" finished-at="2025-06-30T11:20:25 MST" duration-ms="55998" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckoutProcess -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.CheckoutTest@3e0e1046]" started-at="2025-06-30T11:20:25 MST" name="tearDown" finished-at="2025-06-30T11:20:28 MST" duration-ms="2205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationexercise.tests.CheckoutTest -->
+      <class name="com.automationexercise.tests.ProductDetailsTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.ProductDetailsTest@7dc19a70]" started-at="2025-06-30T11:20:41 MST" name="setUp" finished-at="2025-06-30T11:20:48 MST" duration-ms="6729" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testProductDetailsAndAddToCart()[pri:0, instance:com.automationexercise.tests.ProductDetailsTest@7dc19a70]" started-at="2025-06-30T11:20:48 MST" name="testProductDetailsAndAddToCart" finished-at="2025-06-30T11:21:07 MST" duration-ms="18759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductDetailsAndAddToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.ProductDetailsTest@7dc19a70]" started-at="2025-06-30T11:21:07 MST" name="tearDown" finished-at="2025-06-30T11:21:08 MST" duration-ms="1318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationexercise.tests.ProductDetailsTest -->
+      <class name="com.automationexercise.tests.SearchTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.SearchTest@508dec2b]" started-at="2025-06-30T11:21:08 MST" name="setUp" finished-at="2025-06-30T11:21:12 MST" duration-ms="3921" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchForExistingProduct()[pri:0, instance:com.automationexercise.tests.SearchTest@508dec2b]" started-at="2025-06-30T11:21:12 MST" name="testSearchForExistingProduct" description="Verify that searching for an existing product returns results." finished-at="2025-06-30T11:21:28 MST" duration-ms="16234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchForExistingProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.SearchTest@508dec2b]" started-at="2025-06-30T11:21:28 MST" name="tearDown" finished-at="2025-06-30T11:21:30 MST" duration-ms="1467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.SearchTest@508dec2b]" started-at="2025-06-30T11:21:30 MST" name="setUp" finished-at="2025-06-30T11:21:34 MST" duration-ms="4656" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSearchForNonExistentProduct()[pri:0, instance:com.automationexercise.tests.SearchTest@508dec2b]" started-at="2025-06-30T11:21:34 MST" name="testSearchForNonExistentProduct" description="Verify that searching for a non-existent product shows no results." finished-at="2025-06-30T11:21:50 MST" duration-ms="15558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchForNonExistentProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.SearchTest@508dec2b]" started-at="2025-06-30T11:21:50 MST" name="tearDown" finished-at="2025-06-30T11:21:52 MST" duration-ms="1600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationexercise.tests.SearchTest -->
+      <class name="com.automationexercise.tests.RegistrationTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.RegistrationTest@24c1b2d2]" started-at="2025-06-30T11:20:28 MST" name="setUp" finished-at="2025-06-30T11:20:32 MST" duration-ms="4525" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSuccessfulRegistration()[pri:0, instance:com.automationexercise.tests.RegistrationTest@24c1b2d2]" started-at="2025-06-30T11:20:32 MST" name="testSuccessfulRegistration" finished-at="2025-06-30T11:20:38 MST" duration-ms="6249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.RegistrationTest@24c1b2d2]" started-at="2025-06-30T11:20:38 MST" name="tearDown" finished-at="2025-06-30T11:20:41 MST" duration-ms="2905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationexercise.tests.RegistrationTest -->
+      <class name="com.automationexercise.tests.AddToCartTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.AddToCartTest@1b66c0fb]" started-at="2025-06-30T11:18:57 MST" name="setUp" finished-at="2025-06-30T11:19:03 MST" duration-ms="5220" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddProductToCart()[pri:0, instance:com.automationexercise.tests.AddToCartTest@1b66c0fb]" started-at="2025-06-30T11:19:03 MST" name="testAddProductToCart" finished-at="2025-06-30T11:19:24 MST" duration-ms="20938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddProductToCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.AddToCartTest@1b66c0fb]" started-at="2025-06-30T11:19:24 MST" name="tearDown" finished-at="2025-06-30T11:19:25 MST" duration-ms="1526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationexercise.tests.AddToCartTest -->
+      <class name="com.automationexercise.tests.HomePageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.HomePageTest@5a7fe64f]" started-at="2025-06-30T11:17:36 MST" name="setUp" finished-at="2025-06-30T11:17:46 MST" duration-ms="10787" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testHomePageNavigation()[pri:0, instance:com.automationexercise.tests.HomePageTest@5a7fe64f]" started-at="2025-06-30T11:17:46 MST" name="testHomePageNavigation" finished-at="2025-06-30T11:17:59 MST" duration-ms="12928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomePageNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.HomePageTest@5a7fe64f]" started-at="2025-06-30T11:17:59 MST" name="tearDown" finished-at="2025-06-30T11:18:01 MST" duration-ms="1808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automationexercise.tests.HomePageTest -->
+      <class name="com.automationexercise.tests.LoginPositiveTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.automationexercise.tests.LoginPositiveTest@38145825]" started-at="2025-06-30T11:18:01 MST" name="setUp" finished-at="2025-06-30T11:18:06 MST" duration-ms="5005" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidLogin()[pri:0, instance:com.automationexercise.tests.LoginPositiveTest@38145825]" started-at="2025-06-30T11:18:06 MST" name="testValidLogin" finished-at="2025-06-30T11:18:27 MST" duration-ms="20448" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.LoginPositiveTest@3c77d488]" started-at="2025-06-30T03:11:36 UTC" name="tearDown" finished-at="2025-06-30T03:11:37 UTC" duration-ms="1278" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automationexercise.tests.LoginPositiveTest@38145825]" started-at="2025-06-30T11:18:27 MST" name="tearDown" finished-at="2025-06-30T11:18:28 MST" duration-ms="1625" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
