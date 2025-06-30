@@ -1,27 +1,32 @@
 version: '3.8'
 services:
-  # This is the test runner service, built from our local Dockerfile
+  # This is the test runner service
   tests:
     build:
       context: .
+    # This now depends on the HUB's HEALTH, not just its startup
     depends_on:
-      - chrome
-      - firefox
+      selenium-hub:
+        condition: service_healthy
     environment:
-      # This tells our tests where to find the Selenium Hub
       - HUB_HOST=selenium-hub
-    # Mount the target directory to get the report out
     volumes:
       - ./target:/app/target
 
-  # The Selenium Hub service
+  # The Selenium Hub service with the definitive fix
   selenium-hub:
     image: selenium/hub:4.11.0-20230801
     container_name: selenium-hub
     ports:
       - "4444:4444"
+    # DEFINITIVE FIX: Wait for the hub to be fully operational before starting tests
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4444/wd/hub/status"]
+      interval: 1s
+      timeout: 30s
+      retries: 30
 
-  # The Chrome browser node
+  # The browser nodes
   chrome:
     image: selenium/node-chrome:4.11.0-20230801
     depends_on:
@@ -31,7 +36,6 @@ services:
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
 
-  # The Firefox browser node
   firefox:
     image: selenium/node-firefox:4.11.0-20230801
     depends_on:

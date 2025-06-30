@@ -7,6 +7,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.URL;
+import java.time.Duration;
 
 public class DriverFactory {
 
@@ -15,13 +16,10 @@ public class DriverFactory {
     public static WebDriver getDriver(String browser) {
         if (driver.get() == null) {
             try {
-                // DEFINITIVE FIX: Read the Selenium Hub host from an environment variable.
-                // This makes the framework work both locally and in Docker.
                 String hubHost = System.getenv("HUB_HOST") != null ? System.getenv("HUB_HOST") : "localhost";
                 URL hubUrl = new URL("http://" + hubHost + ":4444/wd/hub");
 
                 MutableCapabilities capabilities;
-
                 switch (browser.toLowerCase()) {
                     case "chrome":
                         capabilities = new ChromeOptions();
@@ -33,9 +31,12 @@ public class DriverFactory {
                         throw new IllegalArgumentException("Unsupported browser: " + browser);
                 }
                 
-                driver.set(new RemoteWebDriver(hubUrl, capabilities));
+                // Set a longer timeout for creating the session
+                RemoteWebDriver remoteDriver = new RemoteWebDriver(hubUrl, capabilities);
+                remoteDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+                driver.set(remoteDriver);
+
             } catch (Exception e) {
-                // Throw an exception to fail the test immediately if the driver can't be created.
                 throw new RuntimeException("Failed to create RemoteWebDriver", e);
             }
         }
